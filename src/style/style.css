@@ -1,0 +1,159 @@
+html,
+body {
+  background-color: #3f9362 !important;
+  color: #fff;
+}
+
+h1.ui.header {
+  font-family: "Akaya Telivigala", cursive;
+  margin: 0 !important;
+  margin-left: 15px !important;
+  color: #fff !important;
+}
+
+.pairs {
+  flex-direction: column-reverse !important;
+  margin-top: 10px !important;
+}
+
+.pairs-column,
+.column-right {
+  border-left-style: solid;
+  border-left-width: thin;
+  border-left-color: #fff;
+}
+
+.wheel-column {
+  border-right-style: solid;
+  border-right-width: thin;
+  border-right-color: #fff;
+}
+
+.datum-segment,
+.datum-menu {
+  padding: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+  background-color: transparent !important;
+}
+
+.ui.menu:not(.vertical) .left.item,
+.ui.menu:not(.vertical) :not(.dropdown) > .left.menu {
+  margin-right: 0 !important;
+}
+
+.datum-menu-item {
+  font-family: "Akaya Telivigala", cursive;
+  font-size: 2rem;
+  color: #fff !important;
+}
+
+.wheel-container {
+  width: 100% !important;
+  height: 100% !important;
+  overflow: hidden;
+  margin: auto;
+}
+
+.wheel-container > div {
+  height: 100% !important;
+  width: 100% !important;
+  max-height: unset !important;
+  max-width: unset !important;
+}
+
+.wheel-container > div > img {
+  user-select: none;
+}
+
+.ui.button,
+.ui.button:focus {
+  background-color: #fff;
+  color: #3f9362;
+  transition: all 0.2s linear;
+}
+
+.ui.button:hover {
+  background-color: #3f9362;
+  color: #fff !important;
+}
+
+.wheel-column-wrapper {
+  position: relative;
+  margin: auto;
+  width: 650px;
+  height: 650px;
+}
+
+.spin-btn-container {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 50.5%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 1299px) {
+  .wheel-column-wrapper {
+    width: 500px;
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .datum-menu-item {
+    font-size: 1.5rem;
+  }
+
+  .wheel-column-wrapper {
+    width: 385px;
+    height: 385px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  h1.ui.header {
+    font-size: 1.6rem;
+    margin-left: 0 !important;
+    text-align: center;
+  }
+
+  hr {
+    margin-bottom: 14px;
+  }
+
+  .pairs {
+    margin-top: 0 !important;
+  }
+
+  .pairs-column {
+    border-top: 1px solid #fff !important;
+    border-left: none;
+  }
+
+  .wheel-column {
+    border-right: none;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .datum-menu-item {
+    font-size: 1.2rem;
+  }
+
+  .wheel-column-wrapper {
+    width: 45vh;
+    height: 45vh;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .datum-menu-item {
+    font-size: 1.1rem;
+  }
+
+  .wheel-column-wrapper {
+    width: 40vh;
+    height: 40vh;
+  }
+}
